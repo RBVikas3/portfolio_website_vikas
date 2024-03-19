@@ -107,7 +107,16 @@ function App() {
     window.open(liveProjectUrl, '_blank');
 
   }
+  const openLiveProjectmovix = ()=>{
+    const liveProjectUrl = 'https://movix-phi-woad.vercel.app/';
 
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositorymovix = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/Movix';
+
+    window.open(liveProjectUrl, '_blank');
+  }
   return (
     <div className="max-w-4xl m-auto relative">
       <header className={`${scrolling ? 'border-b border-gray-900' : ''}  fixed left-0 right-0 top-0 z-20`} id="home">
@@ -252,6 +261,26 @@ function App() {
                     Live preview
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryZomoto_clone}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project5} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 Movix
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Movix. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectmovix}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorymovix}>
                     Checkout github
                   </button>
                 </div>
