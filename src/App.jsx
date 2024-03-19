@@ -5,6 +5,7 @@ import Project2 from "./assets/project2.png";
 import Project3 from "./assets/project3.png";
 import Project4 from "./assets/project4.png";
 import project5 from "./assets/project5.png";
+import project6 from "./assets/project6.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -266,7 +267,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={project5} className="w-full h-auto" />
+                <img src={project6} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                  Movix
                 </h3>
