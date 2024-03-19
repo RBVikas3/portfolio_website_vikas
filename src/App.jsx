@@ -4,6 +4,7 @@ import Project1 from "./assets/project1.png";
 import Project2 from "./assets/project2.png";
 import Project3 from "./assets/project3.png";
 import Project4 from "./assets/project4.png";
+import project5 from "./assets/project5.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -94,6 +95,17 @@ function App() {
     const liveProjectUrl = 'https://github.com/RBVikas3/Restaurant_website/';
 
     window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectZomoto_clone=()=>{
+    const liveProjectUrl = 'https://zomoto-cone.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryZomoto_clone = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/Zomoto_Cone';
+
+    window.open(liveProjectUrl, '_blank');
+
   }
 
   return (
@@ -204,6 +216,42 @@ function App() {
                     Live preview
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryGPT_3}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={Project4} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                Restaurant Website
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online store of Restaurant Website. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-2 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectresWeb}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500" onClick={openGithubRepositoryresWeb}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project5} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 GPT_3
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Zomoto Clone. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectZomoto_clone}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryZomoto_clone}>
                     Checkout github
                   </button>
                 </div>
