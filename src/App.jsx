@@ -6,6 +6,7 @@ import Project3 from "./assets/project3.png";
 import Project4 from "./assets/project4.png";
 import project5 from "./assets/project5.png";
 import project6 from "./assets/project6.png";
+import project7 from "./assets/project7.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -115,6 +116,16 @@ function App() {
   }
   const openGithubRepositorymovix = ()=>{
     const liveProjectUrl = 'https://github.com/RBVikas3/Movix';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectLamadmin = ()=>{
+    const liveProjectUrl = 'https://lamadmin-delta.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryLamadmin = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/Lamadmin';
 
     window.open(liveProjectUrl, '_blank');
   }
@@ -262,6 +273,43 @@ function App() {
                     Live preview
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryZomoto_clone}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project6} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 Movix
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Movix. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectmovix}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorymovix}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project7} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                    Lamadmin Admin
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Lamadmin Admin. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectLamadmin}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryLamadmin}>
                     Checkout github
                   </button>
                 </div>
