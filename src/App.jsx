@@ -265,9 +265,6 @@ function App() {
                   </button>
                 </div>
               </div>
-              
-            </div>
-            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={project5} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
@@ -287,6 +284,7 @@ function App() {
               </div>
               
             </div>
+           
           </div>
         </section>
         {/* Technoglies section */}
