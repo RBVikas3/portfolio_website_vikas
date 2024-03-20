@@ -12,7 +12,7 @@ import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
-import Resume from "./assets/resume.pdf"
+// import Resume from "./assets/resume.pdf"
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -54,28 +54,28 @@ function App() {
 
     window.open(liveProjectUrl, '_blank');
   };
-  const handleDownloadResume = () => {
-    // Use the public folder for the file path
-    const resumeFilePath = Resume;
+  // const handleDownloadResume = () => {
+  //   // Use the public folder for the file path
+  //   const resumeFilePath = Resume;
 
-    // Create a link element
-    const link = document.createElement('a');
+  //   // Create a link element
+  //   const link = document.createElement('a');
 
-    // Set the href attribute to the file path
-    link.href = resumeFilePath;
+  //   // Set the href attribute to the file path
+  //   link.href = resumeFilePath;
 
-    // Set the download attribute to specify the file name
-    link.download = 'resume.pdf';
+  //   // Set the download attribute to specify the file name
+  //   link.download = 'resume.pdf';
 
-    // Append the link to the body
-    document.body.appendChild(link);
+  //   // Append the link to the body
+  //   document.body.appendChild(link);
 
-    // Trigger a click on the link to start the download
-    link.click();
+  //   // Trigger a click on the link to start the download
+  //   link.click();
 
-    // Remove the link from the body
-    document.body.removeChild(link);
-  };
+  //   // Remove the link from the body
+  //   document.body.removeChild(link);
+  // };
   const openLiveProjectGPT_3 = ()=>{
     const liveProjectUrl = 'https://gpt-3-jsm-lime.vercel.app/';
 
@@ -171,7 +171,7 @@ function App() {
               <div>
                 <p className="mt-4 text-gray-400">
                 Highly motivated Front-end developer 1.2 years with a passion for crafting engaging UIs and backend architecture. Built  30 websites (personal + professional), proficient in React, Next.js, MongoDB, Node.js, jQuery, AWS, payment integrations (RezorPay, Stripe). </p>
-                <button onClick={handleDownloadResume} className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                   Download resume
                 </button>
               </div>
