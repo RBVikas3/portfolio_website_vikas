@@ -7,6 +7,11 @@ import Project4 from "./assets/project4.png";
 import project5 from "./assets/project5.png";
 import project6 from "./assets/project6.png";
 import project7 from "./assets/project7.png";
+import project8 from "./assets/project8.png";
+import project9 from "./assets/project9.png";
+
+import project10 from "./assets/project10.png";
+import project11 from "./assets/project11.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -126,6 +131,46 @@ function App() {
   }
   const openGithubRepositoryLamadmin = ()=>{
     const liveProjectUrl = 'https://github.com/RBVikas3/Lamadmin';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectFly = ()=>{
+    const liveProjectUrl = 'https://fly-website-six.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryFly = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/fly_Website';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectpocketGadget = ()=>{
+    const liveProjectUrl = 'https://pocket-gadget.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositorypocketGadget = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/PocketGadget';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectHILink = ()=>{
+    const liveProjectUrl = 'https://hi-link-lovat.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryHILink = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/HiLink';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectTravel = ()=>{
+    const liveProjectUrl = 'https://travel-app-one-lac.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryTravel = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/Travel_App';
 
     window.open(liveProjectUrl, '_blank');
   }
@@ -298,6 +343,43 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project9} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                   pocket-gadget
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Pocket-gadget. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectpocketGadget}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorypocketGadget}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project10} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 HiLink
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online HiLink. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectHILink}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryHILink}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={project7} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                     Lamadmin Admin
@@ -315,24 +397,62 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={project6} className="w-full h-auto" />
+                <img src={project8} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                 Movix
+                 Fly Website
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                Responsive React application for an online Movix. Built with HTML5, CSS3 (SCSS), and React.
+                Responsive React application for an online Fly Website. Built with HTML5, CSS3 (SCSS), and React.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectmovix}>
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFly}>
                     Live preview
                   </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorymovix}>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFly}>
                     Checkout github
                   </button>
                 </div>
               </div>
               
             </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project11} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                Travel_Website
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Travel_Website. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectTravel}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryTravel}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project8} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 Fly Website
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Fly Website. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFly}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFly}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+           
            
           </div>
         </section>
