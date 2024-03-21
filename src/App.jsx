@@ -12,6 +12,7 @@ import project9 from "./assets/project9.png";
 
 import project10 from "./assets/project10.png";
 import project11 from "./assets/project11.png";
+import project12 from "./assets/project12.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -171,6 +172,16 @@ function App() {
   }
   const openGithubRepositoryTravel = ()=>{
     const liveProjectUrl = 'https://github.com/RBVikas3/Travel_App';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectDashboard_Starpack = ()=>{
+    const liveProjectUrl = 'https://dashboard-star-pack.vercel.app/dashboard';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryDashboard_Starpack = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/dashboard_starPack';
 
     window.open(liveProjectUrl, '_blank');
   }
@@ -397,18 +408,18 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={project8} className="w-full h-auto" />
+                <img src={project12} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                 Fly Website
+                Dashboard_Starpack
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                Responsive React application for an online Fly Website. Built with HTML5, CSS3 (SCSS), and React.
+                Responsive React application for an online Dashboard_Starpack. Built with HTML5, CSS3 (SCSS), and React.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFly}>
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectDashboard_Starpack}>
                     Live preview
                   </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFly}>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryDashboard_Starpack}>
                     Checkout github
                   </button>
                 </div>
