@@ -14,6 +14,7 @@ import project10 from "./assets/project10.png";
 import project11 from "./assets/project11.png";
 import project12 from "./assets/project12.png";
 import project13 from "./assets/project13.png";
+import project14 from "./assets/project14.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -196,6 +197,16 @@ function App() {
 
     window.open(liveProjectUrl, '_blank');
   }
+  const openLiveProjectFitClub = ()=>{
+    const liveProjectUrl = 'https://fit-club-black.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryFitClub = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/fitClub';
+
+    window.open(liveProjectUrl, '_blank');
+  }
   return (
     <div className="max-w-4xl m-auto relative">
       <header className={`${scrolling ? 'border-b border-gray-900' : ''}  fixed left-0 right-0 top-0 z-20`} id="home">
@@ -365,18 +376,18 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={project9} className="w-full h-auto" />
+                <img src={project14} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                   pocket-gadget
+                   Fit Club
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                Responsive React application for an online Pocket-gadget. Built with HTML5, CSS3 (SCSS), and React.
+                Responsive React application for an online Fit Club. Built with HTML5, CSS3 (SCSS), and React.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectpocketGadget}>
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFitClub}>
                     Live preview
                   </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorypocketGadget}>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFitClub}>
                     Checkout github
                   </button>
                 </div>
@@ -456,18 +467,18 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={project8} className="w-full h-auto" />
+                <img src={project9} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                 Fly Website
+                   pocket-gadget
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                Responsive React application for an online Fly Website. Built with HTML5, CSS3 (SCSS), and React.
+                Responsive React application for an online Pocket-gadget. Built with HTML5, CSS3 (SCSS), and React.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFly}>
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectpocketGadget}>
                     Live preview
                   </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFly}>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositorypocketGadget}>
                     Checkout github
                   </button>
                 </div>
