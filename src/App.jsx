@@ -13,6 +13,7 @@ import project9 from "./assets/project9.png";
 import project10 from "./assets/project10.png";
 import project11 from "./assets/project11.png";
 import project12 from "./assets/project12.png";
+import project13 from "./assets/project13.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -182,6 +183,16 @@ function App() {
   }
   const openGithubRepositoryDashboard_Starpack = ()=>{
     const liveProjectUrl = 'https://github.com/RBVikas3/dashboard_starPack';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openLiveProjectDigitalBusiness = ()=>{
+    const liveProjectUrl = 'https://digital-business-two.vercel.app/';
+
+    window.open(liveProjectUrl, '_blank');
+  }
+  const openGithubRepositoryDigitalBusiness = ()=>{
+    const liveProjectUrl = 'https://github.com/RBVikas3/digital_business';
 
     window.open(liveProjectUrl, '_blank');
   }
@@ -440,6 +451,43 @@ function App() {
                     Live preview
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryTravel}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project8} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                 Fly Website
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online Fly Website. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectFly}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryFly}>
+                    Checkout github
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={project13} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                  Digital Business
+                </h3>
+                <p className="text-gray-400 text-sm mt-2">
+                Responsive React application for an online  Digital Business. Built with HTML5, CSS3 (SCSS), and React.
+                </p>
+                <div className="flex gap-4 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"  onClick={openLiveProjectDigitalBusiness}>
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"  onClick={openGithubRepositoryDigitalBusiness}>
                     Checkout github
                   </button>
                 </div>
